@@ -1,0 +1,7 @@
+def printPicnic(dicionario_itens, leftWidth, rigthWidth):
+    print('Itens do picnic'.center(leftWidth + rigthWidth, '-'))
+    for k, v in dicionario_itens.items():
+        print(k.ljust(leftWidth, '.') + str(v).rjust(rigthWidth))
+
+itensPicnin = {'Lanches': 4, 'Maçãs': 12, 'Copos': 4, 'Bolachas': 8000}
+printPicnic(itensPicnin, 12, 5)
